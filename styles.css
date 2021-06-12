@@ -1,0 +1,8 @@
+.key{
+    display: flex;
+    height: 100%;
+    font-size: 50px;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+}

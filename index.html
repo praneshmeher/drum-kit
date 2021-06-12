@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Drum Kit</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="key">Press Any Key</div>
+        <audio class="audio"></audio>
+        <script>
+            document.addEventListener('keydown', (e)=>{
+                document.querySelector('.key').innerHTML=e.key
+                const audio = document.querySelector('.audio')
+                audio.src = `sounds/${e.keyCode%10}.wav`
+                audio.currentTime=0
+                audio.play()
+            })
+        </script>
+    </body>
+</html>
