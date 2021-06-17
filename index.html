@@ -4,8 +4,10 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+
         <div class="key">Press Any Key</div>
         <audio class="audio"></audio>
+
         <script>
             document.addEventListener('keydown', (e)=>{
                 document.querySelector('.key').innerHTML=e.key
@@ -15,5 +17,6 @@
                 audio.play()
             })
         </script>
+        
     </body>
 </html>
